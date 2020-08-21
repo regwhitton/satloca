@@ -92,3 +92,5 @@ To use Oracle GraalVM native image runtime (assuming you have docker installed, 
 * Run the docker image with `docker run -p 8080:8080 --rm --name satloca satloca`.
 * Test service with `curl -si --no-buffer -X GET "http://localhost:8080/track/25544" -H  "accept: application/x-json-stream"`. Control-C to stop.
 * Stop docker container with `docker kill satloca`.
+
+The Swagger-UI does not currently work.  This probably requires some unknown classes to be annotated for introspection.
